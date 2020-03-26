@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kontrolna</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body id="bd">
+	<div id="main">
+		<div id="box1">
+    <p>Якийсь там текст в якому щось там пише</p>
+    <p>Якийсь там текст в якому щось там пише</p>
+    <p>Якийсь там текст в якому щось там пише</p>
+    <p>Якийсь там текст в якому щось там пише</p>
+    <p>Якийсь там текст в якому щось там пише</p>
+		</div>
+		<br>
+<form name="f1">
+    <input type="button" value="Редагувати" id="edit" name="edit">
+    <input type="button" value="Стилізувати" id="stylize" name="stylize">
+    <input type="button" value="Блокувати" id="blocked" name="blocked">
+</form>
+		<br>
+<div id="box2">
+    <div id="txtArea">
+        <textarea id="newText">
+				
+        </textarea>
+        <br>
+        <form name="f2">
+            <input type="button" value="Зберегти" id="save" name="save">
+            <input type="button" value="Додати" id="add" name="add">
+        </form>
+    </div>
+    <div id="fontEditor">
+        <form name="f3" onclick="sizefont()">
+            Розмір тексту: 
+            <label for="pt12">
+                <input type="radio" id="pt12" name="rad" value="12pt"> 12pt
+            </label>
+            <label for="pt14">
+                <input type="radio" id="pt14" name="rad" value="14pt">14pt
+            </label>
+            <label for="pt16">
+                <input type="radio" id="pt16" name="rad" value="16pt">16pt
+            </label>
+            <label for="pt18">
+                <input type="radio" id="pt18" name="rad" value="18pt">18pt
+            </label>
+            <label for="pt20">
+                <input type="radio" id="pt20" name="rad" value="20pt">20pt
+            </label>
+        </form>
+                    <br>
+                    <br>
+            <form name = "font">
+            Лігатура:    
+              <select name="selectItem" id="selectFamily">
+                  <option value="TimesNewRoman">Times New Roman</option>
+                  <option value="Arial">Arial</option>
+                  <option value="Calibri">Calibri</option>
+                  <option value="Verdana">Verdana</option>
+              </select> 
+              </form>
+              <br>
+              <br>
+        <form name="color">
+              <input type="button" value="Колір тексту" id="txtColor" name="txtColor">   
+              <input type="button" value="Колір фону" id="bgColor" id="bgColor">
+        </form>
+            
+<table id="tableColor">
+     <tr>
+     	<td class="txt" style="background: purple"></td>
+     	<td class="txt" style="background: yellow"></td>
+     	<td class="txt" style="background: brown"></td>
+     </tr>
+     <tr>
+     	<td class="txt" style="background: red"></td>
+     	<td class="txt" style="background: orange"></td>
+     	<td class="txt" style="background: lime"></td>
+     </tr>
+     <tr>
+     	<td class="txt" style="background: aqua"></td>
+     	<td class="txt" style="background: pink"></td>
+     	<td class="txt" style="background: white"></td>
+     </tr>
+</table>
+<table id="tableBgColor">
+     <tr>
+     	<td class="bg" style="background: purple"></td>
+     	<td class="bg" style="background: yellow"></td>
+     	<td class="bg" style="background: brown"></td>
+     </tr>
+     <tr>
+     	<td class="bg" style="background: red"></td>
+     	<td class="bg" style="background: orange"></td>
+     	<td class="bg" style="background: lime"></td>
+     </tr>
+     <tr>
+     	<td class="bg" style="background: aqua"></td>
+     	<td class="bg" style="background: pink"></td>
+     	<td class="bg" style="background: white"></td>
+     </tr>
+</table>
+              <br>
+              <br>
+        <form name="boldItalic">
+              <input type="checkbox" value="bold" name="bold"> Жирний текст  
+              <input type="checkbox" value="italic" name="italic"> Курсивний текст
+        </form>
+    </div>
+</div>
+	</div>
+	<div id="main2">
+	       <h2>Виберіть, що саме ви хочете додати:</h2>
+         <br>
+          <form name="tableAndList">
+                <input type="radio" name="radio" id="tbl" checked> Таблицю 
+                <input type="radio" name="radio" id="lst"> Список
+          </form>
+  
+  <div id="table">
+           <form name="tbl">
+                  <span>Введіть кількість рядків таблиці:</span>
+                      <input type="text" name="tr" id="tr_n"> <br>
+                  <span>Введіть кількість стовпців таблиці:</span>
+                     <input type="text" name="td" id="td_n"> <br>
+           </form>
+<br>
+  <h4>Стилізуйте таблицю</h4>
+<br>
+           <form name="stylize">
+                  <span>Введіть ширину комірки таблиці:</span>
+                       <input type="text" name="wd" id="wd_n">  <br>
+                 <span>Введіть висоту комірки таблиці:</span>
+                       <input type="text" name="hg" id="hg_n">
+           </form> <br>
+  
+           <form name="border">
+               Товщина: <input type="text" name="thickness" id="thick">
+               Тип лінії:
+                         <select name="typeLine" id="line">
+                                <option value="solid" selected>solid</option>
+                                <option value="dotted">dotted</option>
+                                <option value="dashed">dashed</option>
+                                <option value="double">double</option>
+                          </select>
+               Колір лінії:
+                          <select id="color">
+                                <option value="black" selected>black</option>
+                                <option value="red">red</option>
+                                <option value="blue">blue</option>
+                          </select>
+             </form>  <br>
+   
+             <form name="createT">
+                  <input type="button" id="create" name="create" value="Створити таблицю">
+             </form>
+  </div>
+
+<div id="list">
+            <form name="lists" id="elem">
+                Введіть кількість елементів у списку:
+                    <input type="text" id="count" name="count">  <br>
+                <p>Тип маркування списку:
+                    <select name="typeofMark" id="mark">
+                        <option value="circle">circle</option>
+                        <option value="disc">disc</option>
+                        <option value="square">square</option>
+                    </select>
+                </p>  <br>
+            </form>
+            <form name="createList">
+                <input type="button" id="createL" name="create" value="Створити список">
+            </form>
+</div>
+	</div>
+</body>
+</html>
